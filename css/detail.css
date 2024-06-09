@@ -1,5 +1,6 @@
 @import "/css/style.css";
 
+
 body {
 }
 
@@ -26,6 +27,12 @@ detail-screen {
     width: 83%;
 }
 
+.detail-title {
+    display:flex;
+    flex-direction: column;
+}
+
+
 .detail-title-btn {
     margin: 10px 0px;
 }
@@ -48,6 +55,7 @@ detail-screen {
     margin: 20px 0;
     display:block;
 }
+
 
 .detail-content {
     display:flex;
@@ -432,4 +440,45 @@ detail-screen {
     background-color: #666666 !important;
     border: 1px solid lightpink;
     font-weight: 500;
+}
+
+@media screen and (max-width:1200px) {
+    .detail-main {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-title {
+        align-items: center;
+    }
+
+    .detail-content {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-info {
+        margin-top: 30px;
+    }
+    
+    .detail-content__bottom {
+        display:none;
+    }
+
+    .about-performance__time {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-performance__announce img {
+        width: 100%;
+    }
+
+    .detail-sticky-box {
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
 }
